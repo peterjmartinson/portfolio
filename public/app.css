@@ -1,0 +1,92 @@
+/* app css stylesheet */
+/*
+key color groups:
+  C (red)
+  Numbers, decimal, pm (beige/white)
+  operators (gray/beige)
+screen colors:
+  screen (black)
+  digits (red)
+body (eggshell)
+
+*/
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+/* calculator styles */
+.primary {
+  background-color: #107691;
+}
+.gray-dark {
+  background-color: #354044;
+}
+.gray-light {
+  background-color: #f8fafa;
+}
+.white {
+  background-color: #ffffff;
+}
+.black {
+  background-color: #000000;
+}
+.accent {
+  background-color: #E97F13;
+}
+
+.calc-body {
+  width: 280px;
+  height: 410px;
+  padding: 5px 5px 5px 5px; 
+}
+
+.calc-button {
+  font-size: 24px;
+  border: 1px solid black;
+  width: 70px;
+  height: 70px;
+  float: left;
+}
+
+.calc-button:hover {
+  background-color: #d9b310;
+}
+
+.calc-screen {
+  background-color: #000000;
+  color: #E97F13;
+  text-align: right;
+  vertical-align: middle;
+  font-size: 36px;
+  font-weight: bold;
+  border: 1px solid black;
+  width: auto;
+  height: 50px;
+  margin: auto;
+  padding: 0px 10px 0px 0px;
+}
