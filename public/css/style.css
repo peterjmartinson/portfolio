@@ -3,13 +3,13 @@ body {
     font-family: 'Trebuchet MS',Helvetica,sans-serif;
     font-size: 12px;
     background: #354044;
+    color: #f8fafa;
 }
 
 header {
   display: block;
-  height: 100px;
   margin: 0px;
-  padding: 0px;
+  padding: 100px 0px 10px 150px;
   border: 0px solid #e97f13;
   background: #354044;
 }
@@ -24,11 +24,21 @@ nav {
     float: left;
 }
 
+#icon {
+    float: left;
+}
+
 #splash {
     margin: 0px;
     padding: 5px;
     border: 0px solid #e97f13;
     background: #354044;
+}
+
+#splash > h1 {
+    margin: 0px;
+    padding: 35px 0px 0px 20px;
+    float: left;
 }
 
 #main {
@@ -39,6 +49,7 @@ nav {
     background: #354044;
     padding: 0px;
     display: block;
+    clear: both;
 }
 
 article {
