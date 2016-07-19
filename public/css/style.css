@@ -38,7 +38,7 @@ nav {
 #splash > h1 {
     font-size: 36px;
     font-weight: normal;
-    font-variant: small-caps;
+    /*font-variant: small-caps;*/
     margin: 0px;
     padding: 28px 0px 0px 162px;
     float: left;
@@ -63,6 +63,22 @@ article {
     border: 0px solid #e97f13;
     background: #354044;
     float: left;
+}
+
+.projects img {
+    display: block;
+    width: 300px;
+    margin: auto;
+}
+
+.projects p {
+    text-align: center;  
+}
+
+.projects hr {
+    width: 100px;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 #main > aside {
