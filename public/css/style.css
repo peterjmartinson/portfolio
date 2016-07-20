@@ -15,16 +15,19 @@ header {
 }
 
 nav {
-    margin: 0px;
-    padding: 5px;
-    width: 200px;
+    margin: 10px 0px 0px 0px;
+    padding: 15px;
+    width: 190px;
     height: 500px;
     border: 0px solid #e97f13;
     background: #354044;
+    text-align: right;
     float: left;
 }
 
 #icon {
+    margin-left: 147px;
+    margin-right: 5px;
     float: left;
 }
 
@@ -39,7 +42,7 @@ nav {
     font-size: 36px;
     font-weight: normal;
     margin: 0px;
-    padding: 28px 0px 0px 162px;
+    padding: 28px 0px 0px 10px;
     float: left;
 }
 
