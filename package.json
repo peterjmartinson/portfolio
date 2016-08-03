@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootlint": "^0.14.2",
     "express": "^4.14.0",
     "morgan": "^1.7.0"
   }

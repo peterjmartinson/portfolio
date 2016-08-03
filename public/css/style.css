@@ -6,6 +6,10 @@ body {
     color: #f8fafa;
 }
 
+.board {
+  border: 1px solid #000000;
+}
+
 header {
   display: block;
   margin: 0px;
@@ -26,9 +30,8 @@ nav {
 }
 
 #icon {
-    margin-left: 147px;
-    margin-right: 5px;
-    float: left;
+    display: block;
+    margin: auto;
 }
 
 #splash {

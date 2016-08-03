@@ -11,10 +11,13 @@
 
 <html lang="en">
   <head>
+    <!--  MANDATORY THREE FIRST HEADER TAGS FOR BOOTSTRAP  -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"/>
+
+    <!--  STYLESHEETS  -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="vendor/bootstrap-social.css"/>
     <link rel="stylesheet" href="vendor/font-awesome-4.6.3/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -22,33 +25,39 @@
   </head>
   <body>
 
-    <header id="Top">
-      <div id="splash">
-        <div id="icon">
-          <div id="square-4"></div>
-          <div id="square-3"></div>
-          <div>
-          <div style="float: left">
-          <div id="gold-rect"></div>
-          </div>
-          <div id="square-1"></div>
-          </div>
-          <div id="square-2"></div>
-        </div>
-        <h1>STONE TELESCOPE</h1>
-      </div>
-    </header>
+    <div class="container">
+    <!-- header id="Top" class="board" -->
 
-    <div id='main'>
-      
-        <nav>
+      <div class="row">
+        <div class="col-md-1 board"></div>
+        <div class="col-md-2 board span2">
+      <!-- div id="splash" class="board" -->
+          <div id="icon">
+            <div id="square-4"></div>
+            <div id="square-3"></div>
+            <div>
+              <div style="float: left">
+                <div id="gold-rect"></div>
+              </div>
+              <div id="square-1"></div>
+            </div>
+            <div id="square-2"></div>
+          </div>
+        </div>
+        <div class="col-md-8 board">
+          <h1>STONE TELESCOPE</h1>
+        </div>
+        <div class="col-md-1 board"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 board">
           by PETER MARTINSON<br><br>
           <a href="#About"   >About</a><br>
           <a href="#Projects">Projects</a><br>
           <a href="#Contact" >Contact</a>
-          
-        </nav>
-        <article>
+        </div>
+        <div class="col-md-9 board">
           <div id="About">
             <h1>About</h1>
             <p>
@@ -89,6 +98,11 @@
             </a>
             <a href="#Top">Back to Top</a>
           </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 board">
           <div id="Contact">
             <h1>Contact</h1>
             <p>
@@ -107,24 +121,19 @@
             </p>
             <a href="#Top">Back to Top</a>
           </div>
-        </article>
+        </div>
       </div>
-    </div>
-    
-    <footer>
-      2016 - Peter Martinson
-      <button class="btn btn-block btn-primary">
-        <span class="fa fa-twitter">Twitter</span>
-      </button>
-      <ul>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-      </ul>
-    </footer>
-  
+
+      <div class="row">
+        <div class="col-md-12 board text-center">
+          2016 - Peter Martinson
+        </div>
+      </div>
+
+    </div> 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
