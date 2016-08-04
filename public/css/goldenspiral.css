@@ -3,17 +3,18 @@
 **/
 
 #gold-rect {
-  height: 12px;
-  width: 6px;
+  height: 13px;
+  width: 8px;
   background: #354044;
   border-top:    1px solid #f8fafa;
   border-right:  1px solid #f8fafa;
   border-bottom: 1px solid #f8fafa;
   border-left:   1px solid #f8fafa;
+  float: left;
 }
 #square-1 {
-  height: 12px;
-  width: 11px;
+  height: 13px;
+  width: 13px;
   background: #354044;
   border-top:    1px solid #f8fafa;
   border-right:  2px solid #f8fafa;
@@ -22,16 +23,16 @@
   float: left;
 }
 #square-2 {
-  height: 19px;
-  width: 19px;
+  height: 20px;
+  width: 21px;
   background: #354044;
   border-top:    1px solid #f8fafa;
   border-right:  2px solid #f8fafa;
   border-bottom: 2px solid #f8fafa;
-  border-left:   2px solid #f8fafa;
+  border-left:   1px solid #f8fafa;
   position: relative;
-  left: 35px;
-  top: 14px;
+  left: 33px;
+  top: 13px;
 }
 #square-3 {
   height: 33px;
