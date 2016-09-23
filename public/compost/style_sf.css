@@ -1,0 +1,315 @@
+html {
+  font-size: 10px;
+  height: 100vh;
+  width: 100%;
+}
+
+.fixed {
+  background: url(/images/San_Francisco_Oakland_Bay_Bridge_at_night.jpg) white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+/*width: 100%;*/
+}
+
+.board {
+  border: 1px solid white;
+}
+
+body {
+  font-family: 'Trebuchet MS',Helvetica,sans-serif;
+/*  background: #f8fafa; */
+  margin: 0px; /* To eliminate the #f8fafa border  */
+}
+
+main {
+  position: relative;
+  margin-top: 0px;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+main a {
+  color: #354044;
+}
+
+main a:hover {
+  color: #e97f13;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: #0b0f1c;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  color: #ffcc56;
+  text-align: left;
+}
+
+nav a {
+  font-size: 2.0rem;
+  color: #695423;
+  margin-left: 10px;
+  margin-right:10px;
+}
+
+nav a:hover {
+  color: #ffcc56;
+}
+
+section {
+  display: block;
+  position: relative;
+  left: 0;
+  right: 0;
+  padding: 0px;
+}
+
+#home {
+  position: relative;
+  color: #0b0f1c;
+  height: 100vh;
+  top: 80px;
+  left: 50px;
+}
+
+.handle {
+  display: inline;
+  position: relative;
+  text-align: left;
+  font-weight: bold;
+  font-size: 6rem;
+  z-index: 2;
+}
+
+.tagline {
+  display: inline;
+  position: relative;
+  text-align: left;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.pic {
+  height: 160px;
+  width: 160px;
+  margin-left: 20px;
+  display: inline;
+  position: absolute;
+  background: magenta;
+}
+
+#home i {
+  color: black;
+}
+
+.social-media-bar {
+  height: 20px;
+  width: 575px;
+  position: absolute;
+  top: 130px;
+  text-align: center;
+}
+
+.social-media-button {
+  display: inline;
+  width: 30px;
+  height: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 2rem;
+  color: #0b0f1c;
+}
+
+.dark-background {
+  background: #e97f13;
+  color: #0b0f1c;
+  opacity: 0.7;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+#about {
+  top: -50vh;
+  color: #0b0f1c;
+  position: relative;
+  z-index: 2;
+}
+
+#about div {
+  position: relative;
+  width: 70%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+}
+
+#about a {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 5rem;
+  width: 100%;
+  text-align: center;
+}
+
+#about ul {
+  list-style-type: circle;
+}
+
+#about li {
+  font-size: 3rem;
+}
+
+#projects {
+  background: #107691;
+  color: #f8fafa;
+  display: inline-block;
+  height: 100vh;
+  margin: 0 auto;
+  height: 100%; /* so the projects don't extend past the bottom */
+}
+
+#projects div {
+  display: inline-block;
+  margin: 5px 5px 5px 5px;
+  height: 400px;
+  width: 400px;
+}
+
+#projects img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 250px;
+  width: 333px;
+}
+
+#projects hr {
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#projects h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#projects p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+#contact {
+  background: #f8fafa;
+  color: #354044;
+  height: 100vh;
+}
+
+#contact h1 {
+  position: relative;
+  width: 100vw;
+  text-align: center;
+  top: 30vh;
+  font-weight: bold;
+  font-size: 6rem;
+}
+
+footer {
+  display: block;
+  height: 100vh;
+  margin: 0px;
+  padding: 20px;
+  border: 0px solid #e97f13;
+  background: #354044;
+  color: #f8fafa;
+}
+
+
+.mail {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transition: all 0.3s ease 0s;
+}
+
+.mail:after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -50px;
+  width: 0px;
+  height: 0px;
+  border-top: 40px solid transparent;
+  border-left: 50px solid #107691;
+  border-right: 50px solid #107691;
+  border-bottom: 20px solid #107691;
+}
+
+/* the top of the envelope */
+.mail:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: -45px;
+  left: -50px;
+  border-top: 40px solid #107691;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.mail:hover {
+  background: #354044;
+}
+
+
+.thumbnail {
+  height: 160px;
+  width: 160px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -80px;
+  margin-top: -80px;
+  background: magenta;
+  transition: all 0.3s ease 0s;
+}
+
+/*
+.thumbnail:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: rgba(0,0,0,0);
+  pointer-events: none;
+}
+
+.thumbnail:hover:after {
+  z-index: 1;
+  background: rgba(0,0,0,0.75);
+}
+*/
+.thumbnail:hover {
+  background: #354044;
+}
+
