@@ -1,3 +1,6 @@
+/* Make the breakpoint 750px, which is the width
+of your name-address */
+
 html {
   font-size: 10px;
   border: 0px;
@@ -6,7 +9,8 @@ html {
 
 body {
   margin: 0;
-  color: #3a3a3a;
+  /* color: #3a3a3a; */
+  color: black;
 }
 
 main {
@@ -15,6 +19,16 @@ main {
   width: 100%;
   background-color: #abbfc4;
   background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
+}
+
+a {
+  /* color: #3a3a3a; */
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
 }
 
 nav {
@@ -28,18 +42,20 @@ nav {
 nav a {
   font-size: 2.0rem;
   margin-right: 20px;
-  color: #3a3a3a;
-  text-decoration: none;
 }
 
-nav a:hover {
-  color: #ffcc56;
+nav div {
+  display: inline;
+  font-size: 2.0rem;
+  /* font-weight: bold; */
+  margin-right: 20px;
 }
 
-nav .toptitle {
+address {
   position: fixed;
   font-size: 7rem;
   font-weight: bold;
+  font-style: normal;
 }
 
 section {
@@ -52,7 +68,7 @@ section {
 section .subtitle {
   font-size: 4rem;
   font-weight: bold;
-  margin: 10rem 0 0 3rem;
+  margin: 11rem 0 0 3rem;
 }
 
 /* Section specific styling */
@@ -60,13 +76,115 @@ section .subtitle {
   /* display: block; */
   position: inherit;
   font-size: 2rem;
-  margin: 1rem 0 0 4rem;
+  margin: 3rem 0 0 5rem;
+}
+
+.social-media-bar {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  text-align: left;
+}
+
+.social-media-button {
+  display: inline;
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 2rem;
 }
 
 
+#projects a {
+/* #projects div:nth-child(n+2) { */
+  /*          ^ nerdgasm: skip subtitle div */
+  display: inline-block;
+  margin: 5px 5px 5px 5px;
+  height: 400px;
+  width: 400px;
+}
 
+#projects img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 250px;
+  width: 333px;
+}
 
+#projects hr {
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
 
+#projects h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#projects p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#contact h1 {
+  position: absolute;
+  width: 100vw;
+  text-align: center;
+  top: 50vh;
+  transform: translateY(-50%);
+  font-weight: bold;
+  font-size: 6rem;
+  margin: 0;
+}
+
+.mail {
+  position: relative;
+  left: 50%;
+  top: 40vh;
+}
+
+/* bottom of envelope */
+.mail:after {
+  content: "";
+  position: relative;
+  top: 0px;
+  left: -150px;
+  width: 0px;
+  height: 0px;
+  border-top: 40px solid transparent;
+  border-left: 50px solid black;
+  border-right: 50px solid black;
+  border-bottom: 10px solid black;
+}
+
+/* the top of the envelope */
+.mail:before {
+  content: "";
+  position: relative;
+  width: 0px;
+  height: 0px;
+  top: -5px;
+  left: -50px;
+  border-top: 40px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.mail:hover:after {
+  border-left: 50px solid white;
+  border-right: 50px solid white;
+  border-bottom: 10px solid white;
+}
+
+.mail:hover:before {
+  border-top: 40px solid white;
+}
 
 
 
